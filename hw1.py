@@ -1,4 +1,3 @@
-#
 # Adopted from https://stackabuse.com/brief-introduction-to-opengl-in-python-with-pyopengl/
 # CSC 322 Fall 2020
 
