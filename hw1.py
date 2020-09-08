@@ -109,10 +109,11 @@ def draw_maze(generated_maze):
     for x in range(0, generated_maze.width):
         for y in range(0, generated_maze.height):
             # Only north and east neighbors need to be checked
-            if y != height and not generated_maze.maze[y * generated_maze.width + x].neighbors[Directions.NORTH.value]:
+            # No need to draw walls on northern and easternmost edges
+            if y != height - 1 and not generated_maze.maze[y * width + x].neighbors[Directions.NORTH.value]:
                 draw_rectangle(x * 10 - 2, y * 10 + 8, 12, 2)  # Draw north wall
 
-            if x != width and not generated_maze.maze[y * generated_maze.width + x].neighbors[Directions.EAST.value]:
+            if x != width - 1 and not generated_maze.maze[y * width + x].neighbors[Directions.EAST.value]:
                 draw_rectangle(x * 10 + 8, y * 10 - 2, 2, 12)  # Draw east wall
 
 
