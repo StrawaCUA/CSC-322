@@ -21,15 +21,16 @@ class Directions(Enum):
 
 
 class Maze:
-    def __init__(self, maze_width, maze_height):
+    def __init__(self, maze_width, maze_height, init_coords=(0, 0)):
         self.width = maze_width
         self.height = maze_height
         self.maze = [Cell() for _ in range(maze_width * maze_height)]  # Array of cells that compose the maze
         self.cells_traversed = 0  # Initialize visited cell count
         self.stack = []  # Stack for depth-first traversal to generate maze
+        self.starting_coords = init_coords
 
-    def create_maze(self, x=0, y=0):
-        self.stack.append((x, y))  # Add initial node
+    def create_maze(self):
+        self.stack.append((self.starting_coords[0], self.starting_coords[1]))  # Add initial node
 
         while self.cells_traversed < self.width * self.height:
             self.depth_first_traversal()
