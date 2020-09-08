@@ -1,2 +1,2 @@
-# CSC322
+# CSC 322
  Assignments and whatnot
