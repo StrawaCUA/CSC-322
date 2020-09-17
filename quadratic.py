@@ -18,7 +18,7 @@ def quad_formula(a, b, c):
 def quad_real_roots(a, b, c):
     # If a and b are 0 and c is nonzero, then c cannot equal 0, so no solutions
     # If a, b, and c are all 0, then there are infinitely many solutions
-    # We will discard both of these conditions
+    # Both of these conditions won't be considered and thus discarded
     if a == 0 and b == 0:
         return None
 
