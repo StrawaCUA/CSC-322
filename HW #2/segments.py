@@ -61,13 +61,11 @@ def on_segment(p, end0, end1):
     x_min, x_max = min(end0.x, end1.x), max(end0.x, end1.x)
     y_min, y_max = min(end0.y, end1.y), max(end0.y, end1.y)
 
-    if x_min <= p.x <= x_max and y_min <= p.y <= y_max:
-        return True
-    return False
+    return x_min <= p.x <= x_max and y_min <= p.y <= y_max
 
 
-point_a0 = Point(-5, 10)
-point_a1 = Point(5, 10)
-point_b0 = Point(0, 0)
-point_b1 = Point(0, 10)
+point_a0 = Point(0, 0)
+point_a1 = Point(0, 10)
+point_b0 = Point(-5, 10)
+point_b1 = Point(5, 10)
 print(intersect(point_a0, point_a1, point_b0, point_b1))
