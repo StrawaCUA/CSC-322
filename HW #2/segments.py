@@ -50,7 +50,7 @@ def intersect(a0, a1, b0, b1):
         return True
 
     # Test if either of the endpoints of line B are collinear with segment A and lie on segment A
-    if(o_b0 == 0 and on_segment(b0, a0, a1)) or (o_b1 == 0 and on_segment(b1, a0, a1)):
+    if (o_b0 == Orientation.COL and on_segment(b0, a0, a1)) or (o_b1 == Orientation.COL and on_segment(b1, a0, a1)):
         return True
 
     # All cases failed, so the segments do not intersect
