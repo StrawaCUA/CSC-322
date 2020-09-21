@@ -14,7 +14,7 @@ class Point:
 
 
 def cross_product_2d(p0, p1, q0, q1):
-    return (p1.x - p0.x) * (q1.y - q0.y) - (q1.x - q1.x) * (p1.y - p0.y)
+    return (p1.x - p0.x) * (q1.y - q0.y) - (q1.x - q0.x) * (p1.y - p0.y)
 
 
 def get_orientation(poi, p0, p1):
@@ -56,18 +56,16 @@ def intersect(a0, a1, b0, b1):
 
 
 def on_segment(p, end0, end1):
-    x_min = min(end0.x, end1.x)
-    x_max = max(end0.x, end1.x)
-    y_min = min(end0.y, end1.y)
-    y_max = max(end0.y, end1.y)
+    x_min, x_max = min(end0.x, end1.x), max(end0.x, end1.x)
+    y_min, y_max = min(end0.y, end1.y), max(end0.y, end1.y)
 
     if x_min <= p.x <= x_max and y_min <= p.y <= y_max:
         return True
     return False
 
 
-point_a0 = Point(0, 0)
-point_a1 = Point(0, -2)
-point_b0 = Point(1, -1)
-point_b1 = Point(1, 10)
+point_a0 = Point(-5, 10)
+point_a1 = Point(5, 10)
+point_b0 = Point(0, 0)
+point_b1 = Point(0, 10)
 print(intersect(point_a0, point_a1, point_b0, point_b1))
