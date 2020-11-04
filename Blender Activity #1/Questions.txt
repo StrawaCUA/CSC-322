@@ -1,0 +1,20 @@
+1. How does light interact differently with objects in real life? Give 3 examples.
+Depending on the material of the object, the transparency of the object, and the angle of the incoming light, light can act differently with different objects.
+
+2. Why do objects appear to have different colors to our eyes?
+This is because only the wavelengths that are reflected by the object make it back to our eyes, so we only see the colors that get reflected off the object. As a result, different objects of differnt colors will have different colors.
+
+3. What's the advantage of using YUV color space?
+YUV color space is a more efficient encoding, and it reduces the bandwidth more than what RGB encoding can.
+
+4. How are colors added differently for lights compared to paint? What does R+G+B equal in each case?
+I'm not entirely sure how they're added differently.
+
+5. Why are green screens green?
+Since most objects and actors in filming aren't green, we use green screens so that we can quickly eliminate the green background with little issues.
+
+6. Why is tone mapping needed for HDR images?
+For realism on modern displays.
+
+7. What's the relationship between the wavelength of light and the color of light?
+Longer wavelengths shift towards the infrared, so they'll shift towards red, while shorter wavelengths shift towards UV light, so shorter wavelenghts shift towards blue and violet.
