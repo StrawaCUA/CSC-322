@@ -1,0 +1,1 @@
+Comparing the image from checkpoint 2 to checkpoint 5, the latter of the two is noticeably brighter than the former of the two. As such, altering the gamma of the scene is what changes the brightness of the scene itself. I don't think it affects saturation however, but I could be mistaken.
