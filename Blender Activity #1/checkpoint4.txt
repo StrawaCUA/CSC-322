@@ -1,1 +1,0 @@
-Because the resolution is way lower in the second image, the image itself is also a lot smaller. As a result of the lower resolution, we have a fewer pixels to work with. As such, the image itself is of lower quality and a lot of detail gets lost in the image.
