@@ -1,0 +1,12 @@
+# First image (checkpoint4_1.png):<br>
+- For the sphere I applied a Velvet BSDF to its surface,  changed the color to the HSVA values of (0.992, 0.702, 0.906, 1.000), and set the Sigma value to 1.000. I left the rest of the settings as their default values. The Velvet BSDF adds some significantly sized dark region that gets larger the lower the Sigma value is. It seems to function as a roughness of sorts, but not quite in the same way. This shader seems to be similar to the default one that we used.
+- For the plane I applied a Glossy BSDF to its surface, changed the color to the HSVA values of (0.675, 0.414, 0.906, 1.000), and set the Roughness value to 0.500. I left the rest of the settings as their default values. The Roughness value alters how blurry the reflections off the surface are.
+
+# Second image (checkpoint4_2.png):<br>
+- For the sphere I applied a Glass BSDF to its surface,  changed the color to the HSVA values of (0.000, 0.000, 0.906, 1.000), and set the Roughness and IOR values to 0.000 and 1.450 respectively. I left the rest of the settings as their default values. The Roughness affects the sharpness of the refraction, where higher values make it smoother and in turn blurrier. The IOR (index of refraction) defines by how much the incoming light rays change direction, where higher values refract the light more.
+- For the plane I applied an Anisotropic BSDF to its surface, changed the color to the HSVA values of (0.941, 0.396, 0.906, 1.000), and set the Roughness, Anistrophy, and Rotation values to 0.200, 0.500, and 0.000 respectively. The Roughness affects how sharp the reflections are, while the Anistrophy affects how highlights get shaped and in which direction they form.
+
+
+# Third image (checkpoint4_3.png):<br>
+- For the sphere I applied a Refraction BSDF using Beckmann, changed the color to the HSVA values of (0.003, 0.251, 0.906, 1.000), and set the Roughness and IOR values to 0.500 and 1.450 respectively. The Roughness once more controls how sharp the refraction of the light is, and the IOR once more defines how much the light refracts.
+- For the plane I applied a Hair BSDF using Reflection, changed the color to the HSVA values of (0.675, 0.509, 0.906, 1.000), and set the Offset, RoughnessU, and RoughnessV values to 0º, 0.500, and 0.500 respectively. The Offset value controls the amount the the reflection or transmission of the light is rotated. The RoughnessU and RoughnessV values control the roughness in the direction light is skewed and in the direction perpendicular to it.
