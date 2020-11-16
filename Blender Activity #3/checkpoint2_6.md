@@ -1,0 +1,2 @@
+With the point light, the shadow of the sphere is a lot more solid and defined. There's very little transition between the edge of the shadow and where the point light can fully illuminate the plane below.<br>
+With the area light, however, the dark part of the shadow of the sphere is much smaller in cmparison to the one that resulted from the point light. But because the dark part of the shadow is way smaller, there's also a much greater region where the shadow transitions from the darker part's edge to where the light can fully illuminate the plane.
