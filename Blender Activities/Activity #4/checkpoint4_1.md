@@ -1,0 +1,1 @@
+At the top of the box there appears to be almost a floodlight of sorts that just floods the entire enclosed scene with light. As a result, everything in the scene seems kind of hazy and desaturated in appearance.
